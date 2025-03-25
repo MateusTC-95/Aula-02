@@ -55,9 +55,24 @@
 	{
 	    let lado
 	
-	    lado = Number(document.getElementById("altura").value);
+	    lado = Number(document.getElementById("lado").value);
 	
 	    area = lado*lado
 	
 	    document.getElementById("mensagem").innerHTML = "<p style='color : #00CED1'>" + "o valor da area é: " + area + "<br>" + "</p>";
+	}
+
+	function exercicio6()
+	{
+		let quantidade, preco
+
+		quantidade = Number(document.getElementById("quantidade").value);
+		preco = Number(document.getElementById("preco").value);
+	
+	subtotal = quantidade*preco
+	desconto = (subtotal*10) / 100
+	valorf = (subtotal - desconto)
+
+	document.getElementById("mensagem").innerHTML = "<p style='color : #00CED1'>" + "o valor do subtotal é " + subtotal + "<br>" + "o valor do desconto é " + desconto + "<br>" + "o valor do total é " + valorf + "<br>" + "</p>";
+
 	}
